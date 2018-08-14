@@ -8,7 +8,7 @@ Only arrays of `char` are supported for the time being, and only the 32-bit vers
 
 ## Usage
 
-Copy `StaticMurmur.hpp` and include it in your project, remember to compile with C++17. Usage is then pretty straight forward
+Copy `StaticMurmur.hpp` and include it in your project, remember to compile with C++17. Usage is then pretty straight forward, as can be seen in the following example.
 ```c++
 #include "StaticMurmur.hpp"
 
@@ -21,7 +21,7 @@ int main(){
 	return hash;
 }
 ```
-g++ generates the following output (without opimization)
+For the code above `g++` generates the following output (without opimization).
 ```asm
 main:
 	push	rbp
