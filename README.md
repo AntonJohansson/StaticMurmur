@@ -35,6 +35,6 @@ If you have any suggestions or improvements, please feel free to help out.
 
 ## TODO
 
-- [x] MurmurHash3_x86_32(...)
-- [ ] MurmurHash3_x86_128(...)
-- [ ] MurmurHash3_x64_128(...)
+- [x] support `MurmurHash3_x86_32(...)`
+- [ ] support `MurmurHash3_x86_128(...)`
+- [ ] support `MurmurHash3_x64_128(...)`
