@@ -31,7 +31,7 @@ main:
 	pop	rbp
 	ret
 ```
-where `-1025340065` is `3269627231`, but expressed as a signed integer. If you have any suggestions or improvements, please feel free to help out.
+where `-1025340065` is the hash `3269627231`, but expressed as a signed integer. If you have any suggestions or improvements, please feel free to help out.
 
 ## TODO
 
