@@ -4,7 +4,7 @@ This repository provides a constexpr implementation of [MurmurHash3](https://git
 
 ## Limitations
 
-Only arrays of `char` are supported for the time being, and only the 32-bit version of MurmurHash3 has yet to be implemented. Other than that it should work as expected. Impact on compile-time is not known, but is should not be a problem. Tested on `g++` with `std=c++17` and `clang` with `std=c++1z`.
+Only arrays of `char` are supported for the time being, and only the 32-bit version of MurmurHash3 has yet to be implemented. Other than that it should work as expected. Impact on compile-time is not known, but is should not be a problem. Tested on linux with `g++ -std=c++17` and `clang -std=c++1z`, not sure if this will work on windows.
 
 ## Usage
 
