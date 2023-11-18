@@ -8,7 +8,7 @@ namespace murmur{
 // Example:
 // 	if const char* p = "abcd"			(in hex: 0x61,0x62,0x63,0x64)
 // 	then get_block(p, 0) returns 0x64636261 as an unsigned integer.
-// 	Characater order is reveresed in order to comply with original
+// 	Character order is reversed in order to comply with original
 // 	implementation.
 constexpr uint32_t get_block(const char* p, int i){
 	uint32_t block = 
