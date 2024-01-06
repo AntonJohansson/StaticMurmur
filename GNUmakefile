@@ -5,6 +5,10 @@ C++17:=c++17
 C++20:=c++2a
 C++STANDARDS:=$(C++14) $(C++17) $(C++20)
 
+.PHONY: default all clean rebuild
+.NOTPARALLEL: clean rebuild
+default: all;
+
 define bycppstd
 test_$(1).o: CXXFLAGS+=-std=$(1)
 
@@ -28,7 +32,3 @@ clean:
 	-rm -f $(TARGETS) $(addsuffix .o,$(TARGETS))
 
 rebuild: clean all
-
-.DEFAULT: all
-.PHONY: all clean rebuild
-.NOTPARALLEL: clean rebuild
