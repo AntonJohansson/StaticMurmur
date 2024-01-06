@@ -11,11 +11,11 @@ namespace murmur {
 //      Character order is reversed in order to comply with original
 //      implementation.
 constexpr uint32_t get_block(const char *p, unsigned i) {
-    uint32_t block = 
-        static_cast<uint8_t>(p[0+i*4]) << 0  | 
-        static_cast<uint8_t>(p[1+i*4]) << 8  | 
-        static_cast<uint8_t>(p[2+i*4]) << 16 | 
-        static_cast<uint8_t>(p[3+i*4]) << 24;
+    const uint32_t block = 
+        static_cast<uint32_t>(p[0+i*4]) << 0  | 
+        static_cast<uint32_t>(p[1+i*4]) << 8  | 
+        static_cast<uint32_t>(p[2+i*4]) << 16 | 
+        static_cast<uint32_t>(p[3+i*4]) << 24;
     return block;
 }
 
